@@ -1,4 +1,4 @@
-FROM kalilinux/kali-rolling 
+FROM ubuntu:latest 
 
 RUN apt-get update -y > /dev/null 2>&1 && apt-get upgrade -y > /dev/null 2>&1 && apt-get install locales -y \ 
      && localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8 \ 
